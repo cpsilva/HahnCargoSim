@@ -1,0 +1,45 @@
+<div class="card card-outline card-primary">
+    <div class="card-header text-center">
+        <a [routerLink]="['/']" class="h1"><pf-image
+            src="assets/img/logo.png"
+            alt="AdminLTE Logo"
+            class="brand-image"
+            height="100"
+            width="100"
+            rounded="true"
+            style="opacity: 0.8"
+        ></pf-image>
+        <b>Hahn</b>Software
+    </a>
+    </div>
+    <div class="card-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+
+        <form [formGroup]="loginForm" (ngSubmit)="loginByAuth()">
+            <div class="input-group mb-3">
+                <input formControlName="username" type="text" class="form-control" placeholder="Username" />
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-envelope"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input formControlName="password" type="password" class="form-control" placeholder="Password" />
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-lock"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <pf-button [variant]="'primary'" [loading]="isAuthLoading" (click)="loginByAuth()">
+                        Sign In
+                    </pf-button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- /.login-card-body -->
+</div>
