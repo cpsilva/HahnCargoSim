@@ -10,6 +10,9 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["HahnCargoSimAutomation/HahnCargoSimAutomation.csproj", "HahnCargoSimAutomation/"]
+COPY ["HahnCargoSim.Abstractions/HahnCargoSim.Abstractions.csproj", "HahnCargoSim.Abstractions/"]
+COPY ["HahnCargoSim.Concrete/HahnCargoSim.Concrete.csproj", "HahnCargoSim.Abstractions/"]
+COPY ["HahnCargoSim.Core/HahnCargoSim.Core.csproj", "HahnCargoSim.Core/"]
 RUN dotnet restore "./HahnCargoSimAutomation/HahnCargoSimAutomation.csproj"
 COPY . .
 WORKDIR "/src/HahnCargoSimAutomation"

@@ -1,6 +1,0 @@
-@HahnCargoSimAutomation_HostAddress = http://localhost:5191
-
-GET {{HahnCargoSimAutomation_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

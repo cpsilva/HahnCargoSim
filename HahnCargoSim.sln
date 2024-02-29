@@ -5,7 +5,15 @@ VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HahnCargoSim", "HahnCargoSim\HahnCargoSim.csproj", "{19666664-B814-425E-BE37-BF078542DFD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HahnCargoSimAutomation", "HahnCargoSimAutomation\HahnCargoSimAutomation.csproj", "{BC6C3053-18A3-4853-8AF9-F3939A671526}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HahnCargoSimAutomation", "HahnCargoSimAutomation\HahnCargoSimAutomation.csproj", "{BC6C3053-18A3-4853-8AF9-F3939A671526}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HahnCargoSim.Concrete", "HahnCargoSim.Concrete\HahnCargoSim.Concrete.csproj", "{ABFA8BDC-49F3-4707-AD9B-A2A29EDC20FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HahnCargoSim.Core", "HahnCargoSim.Core\HahnCargoSim.Core.csproj", "{9A631780-4BDE-4866-9A92-A6827B088713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HahnCargoSim.Abstractions", "HahnCargoSim.Abstractions\HahnCargoSim.Abstractions.csproj", "{51AAE993-1D84-4119-84B2-0DB6D741979E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HahnCargoSim.Models", "HahnCargoSim.Models\HahnCargoSim.Models.csproj", "{6CBA403F-5742-4A50-A211-C342C8D3A733}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{BC6C3053-18A3-4853-8AF9-F3939A671526}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC6C3053-18A3-4853-8AF9-F3939A671526}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC6C3053-18A3-4853-8AF9-F3939A671526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFA8BDC-49F3-4707-AD9B-A2A29EDC20FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFA8BDC-49F3-4707-AD9B-A2A29EDC20FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFA8BDC-49F3-4707-AD9B-A2A29EDC20FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFA8BDC-49F3-4707-AD9B-A2A29EDC20FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A631780-4BDE-4866-9A92-A6827B088713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A631780-4BDE-4866-9A92-A6827B088713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A631780-4BDE-4866-9A92-A6827B088713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A631780-4BDE-4866-9A92-A6827B088713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51AAE993-1D84-4119-84B2-0DB6D741979E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51AAE993-1D84-4119-84B2-0DB6D741979E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51AAE993-1D84-4119-84B2-0DB6D741979E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51AAE993-1D84-4119-84B2-0DB6D741979E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CBA403F-5742-4A50-A211-C342C8D3A733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBA403F-5742-4A50-A211-C342C8D3A733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBA403F-5742-4A50-A211-C342C8D3A733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBA403F-5742-4A50-A211-C342C8D3A733}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

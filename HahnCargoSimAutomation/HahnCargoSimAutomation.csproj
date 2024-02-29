@@ -9,10 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CSharpFunctionalExtensions" Version="2.41.0" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.2" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HahnCargoSim.Abstractions\HahnCargoSim.Abstractions.csproj" />
+    <ProjectReference Include="..\HahnCargoSim.Concrete\HahnCargoSim.Concrete.csproj" />
+    <ProjectReference Include="..\HahnCargoSim.Core\HahnCargoSim.Core.csproj" />
   </ItemGroup>
 
 </Project>

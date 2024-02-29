@@ -1,4 +1,5 @@
 using HahnCargoSimAutomation.EndpointDefinitions.Configuration;
+using HahnCargoSim.Concrete;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddApplicationInsightsTelemetry();
+builder.Services.AddConcrete();
 builder.Services.AddEndpointDefinitions(typeof(Program));
 
 var app = builder.Build();
@@ -24,8 +26,3 @@ app.UseHttpsRedirection();
 app.UseEndpointDefinitions();
 
 app.Run();
-
-internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
